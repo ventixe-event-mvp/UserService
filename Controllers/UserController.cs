@@ -22,6 +22,16 @@ public class UserController : ControllerBase
         return Ok(users);
     }
 
+    [HttpGet("by-email")]
+    public async Task<ActionResult<User>> GetUserByEmail([FromQuery] string email)
+    {
+        var user = await _userService.GetUserByEmailAsync(email);
+        if (user == null)
+        {
+            return NotFound("Ingen användare med denna Email hittades.");
+        }
+        return Ok(user);
+    }
 
     [HttpPost]
 
