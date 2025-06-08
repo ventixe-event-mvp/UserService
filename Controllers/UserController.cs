@@ -5,6 +5,7 @@ using UserService.Services;
 
 namespace UserService.Controllers;
 
+//koden skriven i samarbete med ChatGPT
 [Route("api/[controller]")]
 [ApiController]
 public class UserController : ControllerBase

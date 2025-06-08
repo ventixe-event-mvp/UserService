@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using UserService.Data;
 using UserService.Models;
-
+//koden skriven i samarbete med ChatGPT
 namespace UserService.Services;
 
 public class UserServiceHandler

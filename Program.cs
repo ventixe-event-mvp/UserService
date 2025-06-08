@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using UserService.Data;
 using UserService.Services;
-
+// koden skriven i samarbete med ChatGPT
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
